@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="image/profile.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Chetan Malviya</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logO.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi, I'm <br> <span>Chetan Malviya</span></h1>
+                <p>And I'm a Web Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ******************* about ******************  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there! I'm Chetan Malviya, pursuing B.Tech in Computer Science & Engineering at Geetanjali Institute Of Technical Studies, Udaipur (Rajasthan), passionate about leveraging technology to solve real-world problems. <br><br>
+
+                    With a strong foundation in programming, data structures, and algorithms, I am enthusiastic about developing my skills in software development, web development and many more.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, TailWind CSS, ReactJS, NodeJS, MongoDB</li>
+                            <li><span>Programming Languages</span><br>C, C++, Java, Python</li>
+                            <li><span>DBMS</span><br>MySQL, Oracle</li>
+                            <li><span>Tools</span><br>Github, VScode, Blender, Canva, Netlify</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Internship at Tech Octanet Pvt. Ltd.</li>
+                            <li><span>2024</span><br>Internship at CSRBOX IBM SkillBuild</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>Pursuing B.tech in Computer Science & Engineering at Geetanjali Institute Of Technical Studies, Udaipur</li>
+                            <li><span>2022</span><br>Completed 12th standard from Govt. SR. SEC. School, Bhinmal (Jalor)</li>
+                            <li><span>2020</span><br>Completed 10th standard from Vidya Bhawan SEC. School, Bhinmal (Jalor)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************ services ************** -->
+     <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus consectetur incidunt magnam ut minima? Eos!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Frontend Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus consectetur incidunt magnam ut minima? Eos!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div> -->
+
+     <!-- *************** portfolio **************** -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png">
+                    <div class="layer">
+                        <h3>Real Estate Website</h3>
+                        <p>This is a basic Real Estate website created using HTML, CSS, JavaScript and ReactJS. It includes buy, sell and rent homes and properties.</p>
+                        <a href="https://property-fussion.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image/work-2.png">
+                    <div class="layer">
+                        <h3>Login Signup Form</h3>
+                        <p>This is a basic Login-Signup form Website created using HTML, CSS, JavaScript and ReactJS.</p>
+                        <a href="https://form-of-login-signup.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image/work-3.png">
+                    <div class="layer">
+                        <h3>Hyundai Motors Website</h3>
+                        <p>This is a basic Hyundai Motors Website created using HTML, CSS, and JavaScript. It includes buying Hyundai cars on this website.</p>
+                        <a href="https://hyundai-motors.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image/work-4.jpg">
+                    <div class="layer">
+                        <h3>To Do List</h3>
+                        <p>This is a basic To-Do List Website created using HTML, CSS, and JavaScript. This website is a digital version of a traditional paper list, allowing you to organize and customize tasks for a project or specific work.</p>
+                        <a href="https://to-do-list-websiteee.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+
+     <!-- **************** contact ********** -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>chetanmalviya230@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9166224756</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/chetan___malviya/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chetan-malviya-a07b89258/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Chetan-Malviya" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="image/Chetan Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ************** copyright *********** -->
+         <div class="copyright">
+            <p>Copyright © Made with <i class="fa-solid fa-heart"></i> by Chetan Malviya</p>
+         </div>
+      </div>
+
+    <script src="portfolio.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwVcLCJZb5CNLpCWh3UmUbE9YDo3Rm78Bh0R09NweJXVdHwQyzA_JKH_HTfXchajnl6/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000 )
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

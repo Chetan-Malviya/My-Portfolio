@@ -28,6 +28,10 @@ body {
     padding: 10px 10%;
 }
 
+.container .social-icons {
+    margin-left: 0.5rem;
+}
+
 nav {
     display: flex;
     align-items: center;
